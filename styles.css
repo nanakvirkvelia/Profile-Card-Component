@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+  }
+  body {
+    font-family: Kumbh Sans;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #19a1ae;
+    background-image: url("images/bg-pattern-top.svg"),
+      url("images/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 35vw bottom 50vh, left 35vw top 45vh;
+  }
+  .main_container {
+    height: 374px;
+    width: 326px;
+    border-radius: 15px;
+    background-color: #ffffff;
+  }
+  .image {
+    border-radius: 15px 15px 0 0;
+    max-width: 326px;
+  }
+  .avatar_container {
+    position: relative;
+        top: -15%;
+        background-color: white;
+        border-radius: 50%;
+        /* 96px(avatar width&height)+5px(border size in Figma)*2=106px */
+        height: 106px;
+        width: 106px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  }
+  .avatar {
+    border-radius: 50%;
+    /* border: 5px solid #ffffff; */
+    display: block;
+    margin: 0 auto;
+  }
+  .profile {
+    text-align: center;
+    position: relative;
+    top: -16%;
+  }
+  .name,
+  .age {
+    display: inline-block;
+    margin-bottom: 13px;
+  }
+  .name {
+    margin-right: 8.5px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2e3349;
+  }
+  .age {
+    margin-left: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    color: #6b7082;
+  }
+  .city {
+    margin: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #6b7082;
+  }
+  hr {
+    background-color: #e8e9ec;
+    height: 1px;
+    border: none;
+    position: relative;
+    top: -10%;
+  }
+  .stat {
+    text-align: center;
+    position: relative;
+    top: -13%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+  article {
+    display: inline-block;
+  }
+  .number {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    color: #2e3349;
+    margin-bottom: 0;
+  }
+  .descr {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 10px;
+    line-height: 12px;
+    color: #6b7082;
+    letter-spacing: 1.5px;
+    margin-top: 9px;
+  }
+  @media screen and (min-width: 375px) {
+    .main_container {
+      width: 350px;
+    }
+    .image {
+      max-width: 350px;
+    }
+    body {
+      background-position: right 50vw bottom 40vh, left 51vw top 48vh;
+    }
+  }
